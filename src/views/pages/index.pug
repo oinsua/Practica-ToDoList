@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Practica To Do List
+        link(rel="stylesheet", href="./css/styles.css")
+    body
+     form(action="#", method="post")
+      fieldset.super-container#super-container
+        legend Practice 1 - To Do List
+        div.input-container
+            input(type="text", id="task", placeholder="Write a new task")
+            input(type="date", id="calendar")
+        fieldset.legend-container
+            legend Select a Priority
+            div.flex-container
+                div.flex-item
+                    input(type="radio", name="color", id="radio_green", hidden=true, value="green", class="radio")
+                    div#green.green.container-color
+                div.flex-item
+                    input(type="radio", name="color", id="radio_yellow", hidden=true, value="yellow", class="radio")
+                    div#yellow.yellow.container-color
+                div.flex-item
+                    input(type="radio", name="color", id="radio_red", hidden=true, value="red", class="radio")
+                    div#red.red.container-color
+        div.button-container
+            button(id="button", class="button-insertar") Insertar
+    script(src="js/scripts-min.js")

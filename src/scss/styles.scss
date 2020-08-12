@@ -1,0 +1,105 @@
+body{
+  color: #b82b2b;
+  background-color: #9c9494;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.flex-item{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0.3rem;
+}
+
+.super-container{
+  display: flex;
+  flex-direction: row;
+  width: 350px;
+  font-size: 1.5rem;
+}
+
+.input-container{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button-container{
+  text-align: center;
+}
+
+.legend-container{
+  font-size: 1rem;
+  margin: 1rem;
+}
+
+.container-color{
+  width: 50px;
+  height: 50px;
+}
+
+.flex-container{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.red{
+  background-color: red;
+  &:hover{
+    background-color: crimson;
+  }
+}
+
+.yellow{
+  background-color: yellow;
+  &:hover{
+    background-color: #ffff00c2;
+  }
+}
+
+.green{
+  background-color:green;
+  &:hover{
+    background-color: rgb(55, 163, 55);
+  }
+}
+
+.color_selected{
+  border:2px solid black;
+  border-radius: 5px;
+}
+
+.list_task{
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  color: black;
+  padding: 5px;
+  margin: 5px;
+}
+
+button{
+  background-color:cornflowerblue ;
+  border: 1px solid blue;
+  border-radius: 5px;
+  font-weight:600;
+  &:hover{
+    background-color:royalblue;
+  }
+}
+
+.button-insertar{
+  margin: 5px;
+}
+
+img{
+  width: 15px;
+  height: 15px;
+  &:hover{
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+}
