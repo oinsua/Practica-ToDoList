@@ -20,6 +20,18 @@ const Color_Selected = (div) => {
     div.classList.add('color_selected');
 }
 
+//Funcion que se encarga de reset el formulario y de llevar los cuadros de colores a un estado inicial
+const Reset_Form = () => {
+    //Limpiar los elementos del formulario
+    document.getElementById('form1').reset();
+    //Seleccionar todos los cuadros de color
+    const element = document.querySelectorAll('.container-color');
+    //Bucle for para remover la clase que muestra en la interfaaz como seleccionado
+    for (const item of element) {
+        item.classList.remove('color_selected');
+    }
+}
+
 //Evento a la escucha del click, para poner el radio a true y seleccionar el div verde a traves de un estilo CSS
 container_green.addEventListener('click', () => {
     document.getElementById('radio_green').checked = true;
@@ -89,6 +101,8 @@ button.addEventListener('click', (e) => {
         localStorage.setItem(task, JSON.stringify(object_task));
         //Llamar a la funcion agregar tareas
         Agregar_Tasks(object_task);
+        //Llamar a la funcion que limpia el formulario.
+        Reset_Form();
     }
     catch(error){
       console.error(error);
