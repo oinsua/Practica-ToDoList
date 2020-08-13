@@ -25,5 +25,7 @@ html(lang="en")
                     input(type="radio", name="color", id="radio_red", hidden=true, value="red", class="radio")
                     div#red.red.container-color
         div.button-container
-            button(id="button", class="button-insertar") Insertar
+            button(id="button", class="button-insertar", data-action="add") Add Task
+            div.error#error
+        div.tasks#tasks
     script(src="js/scripts-min.js")
