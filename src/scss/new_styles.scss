@@ -1,0 +1,136 @@
+body{
+    min-height: 100vh;
+    background-color: #9c9999;
+    margin: 0; 
+    font-family: sans-serif; 
+} 
+
+*{
+    box-sizing: border-box;
+}
+
+.app{
+    border: 2px solid hsla(9, 78%, 2%, 0.5);
+    border-radius: 10px;
+    min-width: 320px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+
+.title{
+    margin-top: 0;
+    text-align: center;
+    font-weight: normal;
+    color: #fff;
+}
+
+.form1{
+    display: grid;
+    gap: 10px;
+}
+
+.form_text, 
+.form_date {
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 15px;
+    background: none;
+    background-color: #fff;
+    text-align: center;
+    height: 25px;
+}
+
+.form_data{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.form_colors{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.form_button{
+    background-color: rgb(1, 164, 175);
+    color: #fff;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    justify-self: center;
+    padding: 10px;
+    min-width: 50%;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 3px;
+    transition: transform .1s;
+}
+
+.form_button:active{
+    transform: scale(.9);
+}
+
+.form_radio{
+    width: 3rem;
+    height: 3rem;
+    appearance: none;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.form_radio:active{
+    transform: scale(0.8);
+}
+
+.form_radio:checked{
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.task{
+    display: grid;
+    grid-template-columns: 1fr 90px 50px;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 20px;
+    min-height: 40px;
+    padding: 3vmin 15px;
+}
+
+.task p {
+    margin-top: 0;
+    margin-bottom: 0;    
+}
+
+.task_text{
+    font-size: 1rem;
+    border-radius: 15px;
+}
+
+.delete_task{
+    justify-self: center;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    cursor: pointer;
+    background-image: url(../images/Delete2.jpeg);
+}
+
+.firstcolor{
+    background-image: linear-gradient(90deg, rgba(13, 107, 63, 0.5)0%, rgba(77, 158, 56, 0.5) 100% ),
+    url(../images/double-bubble-dark.png);
+}
+
+.secondcolor{ 
+    background-image: linear-gradient(90deg, rgba(235, 220, 17, 0.829) 0%, rgba(182, 135, 35, 0.5) 100%),
+    url(../images/double-bubble-dark.png);
+}
+.thirdcolor{ 
+    background-image: linear-gradient(90deg, rgba(214, 45, 45, 0.5) 0%, rgba(241, 15, 15, 0.788) 100%),
+    url(../images/double-bubble-dark.png);
+}

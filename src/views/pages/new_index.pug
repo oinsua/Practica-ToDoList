@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Practice To Do List
+        link(rel="stylesheet", href="./css/new_styles.css")
+    body
+       article.app
+        h1.title To Do List
+        form.form1#form1
+            div.form_data
+                input.form_text(type="text", name="text", maxlength="30", placeholder="Enter a Task Name", requered="true")
+                input.form_date(type="date", name="date", requered="true") 
+            div.form_colors
+                input.form_radio.firstcolor(type="radio", name="color", value="firstcolor")
+                input.form_radio.secondcolor(type="radio", name="color", value="secondcolor")
+                input.form_radio.thirdcolor(type="radio", name="color", value="thirdcolor")
+            
+            input.form_button#button(type="button" value="Add Task" data-action="add")
+
+        div.botton#botton
+       script(src="js/new_scripts-min.js")

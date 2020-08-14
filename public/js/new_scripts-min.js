@@ -1,0 +1,1 @@
+"use strict";var form1=document.getElementById("form1"),button=document.getElementById("button"),botton=document.getElementById("botton"),formIsValid={task:!1,date:!1,priority:!1};form1.addEventListener("submit",(function(t){t.preventDefault()})),form1.date.setAttribute("min",(new Date).toLocaleDateString("fr-CA"));

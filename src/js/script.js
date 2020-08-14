@@ -88,6 +88,8 @@ const Agregar_Tasks = (object) => {
     let img_delete = document.createElement('IMG');
     let div_html = document.createElement('DIV');
     let super_div = document.getElementById('tasks');
+    //Creando un fragmet para contener todos los elementos
+    let fragment = document.createDocumentFragment();
     //Asignando los valores correspondientes a las variables
     span_task.textContent = object.task;
     span_date.textContent = object.date;
@@ -101,10 +103,11 @@ const Agregar_Tasks = (object) => {
     div_html.classList.add(object.priority);
     div_html.classList.add('list_task');
     //Conformando el componente de visualizacion a traves de una etiqueta DIV
-    div_html.appendChild(span_task);
-    div_html.appendChild(span_date);
-    div_html.appendChild(img_update);
-    div_html.appendChild(img_delete);
+    fragment.appendChild(span_task);
+    fragment.appendChild(span_date);
+    fragment.appendChild(img_update);
+    fragment.appendChild(img_delete);
+    div_html.appendChild(fragment);
     super_div.appendChild(div_html);
 }
 
